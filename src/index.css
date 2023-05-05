@@ -47,6 +47,11 @@ cursor: pointer;
 box-shadow: none;
 }
 
+.btn.lg.primary{
+    color:black;
+
+}
+
 #app {
 background: var(--color-bg-black);
 position: fixed;
@@ -145,6 +150,7 @@ border: 1px solid var(--color-primary);
     bottom: 4rem;
     right: 7rem;
     padding: 1rem;
+
 }
 
 
@@ -177,6 +183,35 @@ border: 1px solid var(--color-primary);
     font-size: 2rem;
 }
 
+
+/* MEDIA QUERIES FOR PHONES */
+@media screen and (max-width: 600px) {
+    #app {
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .notes__header {
+        width: 100%;
+        padding: 2rem 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .notes__container {
+        margin-top: 5rem;
+        gap: 1rem;
+    }
+
+    .btn.add__btn {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        bottom: 6%;
+        right: 2rem;
+    }
+}
 
 /* MEDIA QUERIES FOR PHONES */
 @media screen and (max-width: 600px) {
